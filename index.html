@@ -1,0 +1,87 @@
+<!DOCTYPE html>  <!--defines that this document is an HTML5 document-->
+<html>  <!--root element of an HTML page-->
+<head>   <!--contains meta information about the HTML page--> 
+    <title>Document</title>  <!--specifies a title for the HTML page -->
+
+    <!--Simple selectors- div, form, input,i,a -->
+    <!--space, > (immediate), + (sibling immediate), ~ general sibling-->
+    <style>
+        h1{
+            color:rgb(61, 61, 39) ;
+        }
+        p{
+            color: cadetblue;
+        }
+        .list
+        {
+             background-color: chartreuse;
+        }
+        .unlist{
+            background-color: chocolate;
+        }
+        .common p{
+           color: coral;
+        }
+        label[for]
+        {
+            background-color:crimson ;
+        }
+    </style>
+</head>
+<body>  
+<!--defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
+
+<!--HEADING TAG--> 
+<h1>
+    Hello
+</h1>  
+<div class="common common">
+    <div class="something">Something</div>
+    <div class="something">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi autem expedita obcaecati maxime ex minima quia rerum mollitia. Consequatur sequi laboriosam enim hic officiis deleniti culpa facilis expedita magni ut!
+        </p>
+    </div>
+</div>
+
+ <!--PARAGRAPH TAG--> 
+ <p>
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos quae, nulla voluptate nisi dolore nesciunt accusamus, neque similique rerum quia reprehenderit doloremque aperiam sint perspiciatis eaque minus beatae ipsam quam?
+ </p>
+ <!--ANCHOR TAG-->
+ <!--The link's destination is specified in the href attribute. -->
+<a href="https://www.google.com">Go To Google</a>
+<!--defines a line break-->
+<br>
+<!--IMAGE TAG-->
+<img src="dog-wallpaper-12.jpg" alt="Dog's Image" width="200" height="200">
+<br>
+<!--Division-->
+<div>
+    Hello
+    <p>Cutie</p>
+</div>
+<!--UNORDERED LIST-->
+<ul class="list">
+    <li>Latte</li>
+    <li>Cappicino</li>
+    <li>Mocha</li>
+</ul>
+
+<!--ORDERED LIST-->
+<ol class="unlist">
+    <li>Latte</li>
+    <li>Cappicino</li>
+    <li>Mocha</li>
+</ol>
+
+<!-- <span>Content Filling</span> -->
+
+<form>
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <label for="pass">Password</label>
+    <input type="password" id="pass">
+</form>
+</body>
+</html>
